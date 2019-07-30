@@ -51,8 +51,10 @@ function App() {
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
             <AdSense.Google
               client='ca-pub-4456878218517382'
-              
               slot='6955020624'
+              style={{ display: 'block' }}
+              format='auto'
+              responsive='true'
             />
             <Search
               placeholder="Informe o CPF"
