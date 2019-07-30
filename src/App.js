@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import AdSense from 'react-adsense'
 import { Layout, Menu, Input } from 'antd';
 
 
@@ -48,6 +49,11 @@ function App() {
         </Header>
         <Content style={{ padding: '0 50px'}}>
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+            <AdSense.Google
+              client='ca-pub-4456878218517382'
+              
+              slot='6955020624'
+            />
             <Search
               placeholder="Informe o CPF"
               onChange={e => setInput(e.target.value)}
