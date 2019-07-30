@@ -23,7 +23,8 @@ function App() {
   const [input, setInput] = useState('')
 
   const api = () => {
-    fetch(`http://localhost:3001/api/cpf/${input}`)
+    // fetch(`http://localhost:3001/api/cpf/${input}`)
+    fetch(`https://cpfsearch.herokuapp.com/api/cpf/${input}`)
       .then(res => res.json())
       .then(data => {
         setSearch(data)
